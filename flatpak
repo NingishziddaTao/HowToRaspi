@@ -1,0 +1,18 @@
+# alternatives
+appimage
+snapcraft # snaps
+
+# Setup flatpak
+sudo apt install flatpak
+# Add remote
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# Install krita
+flatpak install flathub org.kde.krita
+flatpak run org.kde.krita
+
+# Commands
+flatpak remotes
+flatpak search <package>
+flatpak run <package>
+flatpak update
